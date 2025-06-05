@@ -100,13 +100,16 @@ details[open] > summary::after {
   transform: rotate(180deg);
 }
 
-/* Add arrow after ALL summaries */
 summary::after {
-  content: "▼";
+  content: " ▼";
   font-size: 0.8rem;
-  margin-left: 0.5rem;
   transition: transform 0.3s ease;
   display: inline-block;
+}
+
+/* Rotate arrow when the dropdown is open */
+details[open] > summary::after {
+  transform: rotate(180deg);
 }
 
 /* Rotate arrow when the parent <details> is open */
