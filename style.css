@@ -34,7 +34,7 @@ header {
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem; /* Matches About Me */
+  font-size: 1.4rem; /* Matches About Me */
   font-weight: 600;
   letter-spacing: 0.05em;
   color: #004e92;
@@ -65,7 +65,7 @@ nav a i {
 .about-title,
 .dropdown > summary {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;          /* Large like 'About me' */
+  font-size: 1.4rem;          /* Large like 'About me' */
   font-weight: 600;
   letter-spacing: 0.05em;
   color: #004e92;
@@ -126,7 +126,7 @@ details[open] > summary::after {
 .teaching details > summary:not(.about-title),
 .internship details > summary:not(.about-title),
 .experience details > summary:not(.about-title) {
-  font-size: 1.2rem;        /* Smaller than section title */
+  font-size: 1rem;        /* Smaller than section title */
   font-weight: 600;
   margin-top: 0.6rem;
   color: #333;
