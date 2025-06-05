@@ -84,17 +84,27 @@ details {
   padding-left: 0.5rem;
 }
 
-/* Main summary with custom arrow AFTER the text */
+summary {
+  list-style: none; /* removes bullet/arrow in some browsers */
+}
+
+summary::-webkit-details-marker {
+  display: none; /* Chrome, Safari */
+}
+
+summary::marker {
+  display: none; /* Firefox */
+}
+
+/* Custom arrow after 'Education' */
 .dropdown > summary {
   font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
-  list-style: none; /* hide default arrow */
   position: relative;
   padding-right: 1.5rem;
 }
 
-/* Custom arrow using pseudo-element */
 .dropdown > summary::after {
   content: "▼";
   font-size: 0.8rem;
@@ -104,7 +114,6 @@ details {
   transition: transform 0.3s ease;
 }
 
-/* Rotate the arrow when open */
 .dropdown[open] > summary::after {
   transform: rotate(180deg);
 }
