@@ -90,6 +90,7 @@ details[open] > summary::after {
 .dropdown > details > summary,
 .education details > summary:not(.about-title),
 .teaching details > summary:not(.about-title),
+.internship details > summary:not(.about-title),
 .experience details > summary:not(.about-title) {
   font-size: 1.2rem;        /* Smaller than section title */
   font-weight: 600;
@@ -104,6 +105,7 @@ details[open] > summary::after {
 .dropdown p,
 .education p,
 .teaching p,
+.internship p,
 .experience p {
   font-size: 1rem;
   line-height: 1.5;
@@ -115,6 +117,7 @@ details[open] > summary::after {
 /* Teaching/Experience shared styles */
 .teaching,
 .experience,
+.internship,
 .education {
   margin-top: 2rem;
   font-family: 'Poppins', sans-serif;
