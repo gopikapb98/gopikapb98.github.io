@@ -133,7 +133,7 @@ summary::marker {
   line-height: 1.5;
 }
 
-.education summary {
+.education summary:hover {
   font-weight: 400;
   font-size: 1.2rem;
   outline: none;
