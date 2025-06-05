@@ -58,23 +58,33 @@ nav a i {
 
 .education details {
   margin-bottom: 1rem;
+  border: 2px solid #0077b6;
+  border-radius: 8px;
+  background-color: #e6f0ff;
+  box-shadow: 0 4px 8px rgba(0, 119, 182, 0.2);
+  padding: 0.75rem 1.25rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  border: 1px solid #0077b6;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  background-color: #f0f8ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.education details[open] {
+  background-color: #d0e4ff;
+  box-shadow: 0 6px 12px rgba(0, 119, 182, 0.35);
 }
 
 .education summary {
-  font-weight: bold;
-  font-size: 1.1rem;
-  outline: none; /* removes default focus outline */
+  font-weight: 700;
+  font-size: 1.2rem;
+  outline: none;
+  user-select: none;
 }
 
 .education p {
   margin: 0.5rem 0 0 1rem;
-  font-size: 0.95rem;
-  color: #333;
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.4;
 }
 
 footer {
