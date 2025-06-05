@@ -150,7 +150,7 @@ details[open] > summary::after {
   line-height: 1.5;
 }
 
-.education summary:hover {
+.education summary {
   font-weight: 400;
   font-size: 1.2rem;
   outline: none;
@@ -186,6 +186,9 @@ details[open] > summary::after {
 }
 
 .teaching summary:hover {
+  color: #0077b6;
+}
+.education summary:hover {
   color: #0077b6;
 }
 
