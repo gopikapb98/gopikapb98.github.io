@@ -56,6 +56,27 @@ nav a i {
   margin-top: 0;
 }
 
+.education details {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: 1px solid #0077b6;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  background-color: #f0f8ff;
+}
+
+.education summary {
+  font-weight: bold;
+  font-size: 1.1rem;
+  outline: none; /* removes default focus outline */
+}
+
+.education p {
+  margin: 0.5rem 0 0 1rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
