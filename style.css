@@ -91,7 +91,6 @@ details[open] > summary::after {
 .dropdown > details > summary,
 .education details summary,
 .teaching summary,
-.internship summary,
 .experience summary {
   font-size: 1.2rem;
   font-weight: 600;
@@ -103,7 +102,6 @@ details[open] > summary::after {
 /* Nested content */
 .dropdown p,
 .education p,
-.internship p,
 .teaching p,
 .experience p {
   font-size: 1rem;
@@ -116,7 +114,6 @@ details[open] > summary::after {
 /* Teaching/Experience shared styles */
 .teaching,
 .experience,
-.internship,
 .education {
   margin-top: 2rem;
   font-family: 'Poppins', sans-serif;
