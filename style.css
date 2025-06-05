@@ -18,7 +18,7 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
-section h2 {
+h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem; /* Matches About Me */
   font-weight: 600;
@@ -31,7 +31,7 @@ section h2 {
   transition: color 0.3s ease;
 }
 
-section h2:hover {
+h2:hover {
   color: #0077b6;
   cursor: default;
 }
