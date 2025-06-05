@@ -14,8 +14,17 @@ header {
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.bio {
+  margin-top: 2rem;
+}
+
+.bio h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 nav a {
