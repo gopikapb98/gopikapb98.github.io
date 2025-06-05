@@ -89,6 +89,7 @@ details[open] > summary::after {
 
 .dropdown > details > summary,
 .education details > summary:not(.about-title),
+.publications details > summary:not(.about-title),
 .teaching details > summary:not(.about-title),
 .internship details > summary:not(.about-title),
 .experience details > summary:not(.about-title) {
@@ -105,6 +106,7 @@ details[open] > summary::after {
 .dropdown p,
 .education p,
 .teaching p,
+.publications p,
 .internship p,
 .experience p {
   font-size: 1rem;
@@ -118,6 +120,7 @@ details[open] > summary::after {
 .teaching,
 .experience,
 .internship,
+.publications,
 .education {
   margin-top: 2rem;
   font-family: 'Poppins', sans-serif;
