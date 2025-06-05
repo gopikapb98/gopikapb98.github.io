@@ -33,7 +33,7 @@ nav a i {
 .about-title,
 .dropdown > summary {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.8rem;          /* Large like 'About me' */
   font-weight: 600;
   letter-spacing: 0.05em;
   color: #004e92;
@@ -87,15 +87,16 @@ details[open] > summary::after {
   content: " ▿";
 }
 
-/* Nested summaries (degree/job titles) */
 .dropdown > details > summary,
-.education details summary,
-.teaching summary,
-.experience summary {
-  font-size: 1.2rem;
+.education details > summary:not(.about-title),
+.teaching details > summary:not(.about-title),
+.experience details > summary:not(.about-title) {
+  font-size: 1.2rem;        /* Smaller than section title */
   font-weight: 600;
   margin-top: 0.6rem;
   color: #333;
+  cursor: pointer;
+  user-select: none;
   transition: color 0.3s ease;
 }
 
