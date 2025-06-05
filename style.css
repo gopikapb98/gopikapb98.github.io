@@ -78,8 +78,7 @@ nav a i {
 
 .education details {
   margin-bottom: 1rem;
-  border: 2px solid #0077b6;
-  border-radius: 8px;
+  border: none;
   background-color: #e6f0ff;
   box-shadow: 0 4px 8px rgba(0, 119, 182, 0.2);
   padding: 0.75rem 1.25rem;
