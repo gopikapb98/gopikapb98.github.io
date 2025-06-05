@@ -101,7 +101,7 @@ details[open] > summary::after {
 }
 
 summary::after {
-  content: " ▼";
+  content: "▷";
   font-size: 0.8rem;
   transition: transform 0.3s ease;
   display: inline-block;
@@ -109,7 +109,7 @@ summary::after {
 
 /* Rotate arrow when the dropdown is open */
 details[open] > summary::after {
-  transform: rotate(180deg);
+ content: "▿";  
 }
 
 /* Rotate arrow when the parent <details> is open */
