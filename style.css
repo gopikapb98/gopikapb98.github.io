@@ -76,20 +76,52 @@ nav a i {
   margin-top: 0;
 }
 
-.education details {
-  margin-bottom: 1rem;
-  border: none;
-  background-color: #e6f0ff;
-  box-shadow: 0 4px 8px rgba(0, 119, 182, 0.2);
-  padding: 0.75rem 1.25rem;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+details {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  padding-left: 0.5rem;
 }
 
-.education details[open] {
-  background-color: #d0e4ff;
-  box-shadow: 0 6px 12px rgba(0, 119, 182, 0.35);
+/* Main summary with custom arrow AFTER the text */
+.dropdown > summary {
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none; /* hide default arrow */
+  position: relative;
+  padding-right: 1.5rem;
+}
+
+/* Custom arrow using pseudo-element */
+.dropdown > summary::after {
+  content: "▼";
+  font-size: 0.8rem;
+  position: absolute;
+  right: 0;
+  top: 0.35rem;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the arrow when open */
+.dropdown[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+/* Inner degree summaries */
+.education details summary {
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 0.5rem;
+}
+
+.education details p {
+  margin: 0.4rem 0 0 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .education summary {
