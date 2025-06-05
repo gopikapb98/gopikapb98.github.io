@@ -71,6 +71,7 @@ nav a i {
 /* Bio content spacing */
 .bio {
   margin-top: 2rem;
+  margin-left: 1rem;
 }
 
 /* Dropdown structure */
@@ -147,7 +148,7 @@ details[open] > summary::after {
 }
 
 ul li {
-  line-height: 1.6;
+  line-height: 1.8;
   margin-bottom: 0.5rem;
 }
 
