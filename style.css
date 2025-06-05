@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
@@ -11,6 +11,26 @@ header {
   color: white;
   text-align: center;
   padding: 2rem 1rem;
+}
+
+.bio h2, 
+.education h2 {
+  font-weight: 600;       /* Semi-bold */
+  font-size: 1.8rem;
+  letter-spacing: 0.05em; /* Adds some spacing between letters */
+  color: #004e92;         /* A nice blue shade */
+  margin-bottom: 0.8rem;
+  font-smooth: always;    /* Attempt smoother font rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: color 0.3s ease;
+}
+
+/* Optional: add subtle hover effect on headings */
+.bio h2:hover,
+.education h2:hover {
+  color: #0077b6;
+  cursor: default;
 }
 
 header h1 {
