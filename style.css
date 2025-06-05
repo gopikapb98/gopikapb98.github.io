@@ -112,20 +112,17 @@ details[open] > summary::after {
  content: "▿";  
 }
 
-/* Rotate arrow when the parent <details> is open */
-details[open] > summary::after {
-  tr
-
 /* Custom arrow after 'Education' */
 .dropdown > summary,
 .about-title {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;       /* same size as About me */
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 2rem;
   margin-bottom: 0.8rem;
-  color: #1a1a1a;
-  cursor: pointer;
+  color: #004e92;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   transition: color 0.3s ease;
 }
 
