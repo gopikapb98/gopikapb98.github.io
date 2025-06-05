@@ -118,20 +118,39 @@ details[open] > summary::after {
 
 /* Custom arrow after 'Education' */
 .dropdown > summary {
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.6rem;         /* Bigger font */
+  font-weight: 700;          /* Bolder */
+  margin-top: 1.5rem;
   cursor: pointer;
-  position: relative;
-  padding-right: 1.5rem;
+  color: #222;
+  transition: color 0.3s ease;
 }
 
-.dropdown > summary::after {
-  content: "▼";
-  font-size: 0.8rem;
-  position: absolute;
-  right: 0;
-  top: 0.35rem;
-  transition: transform 0.3s ease;
+/* On hover */
+.dropdown > summary:hover {
+  color: #005f99;
+}
+
+/* Sub-entries (like degrees, jobs, etc.) */
+.dropdown > details > summary {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0.6rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.dropdown > details > summary:hover {
+  color: #0077b6;
+}
+
+/* Paragraph text inside entries */
+.dropdown p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-left: 1.5rem;
+  color: #444;
 }
 
 .dropdown[open] > summary::after {
