@@ -13,37 +13,8 @@ header {
   padding: 2rem 1rem;
 }
 
-.bio h2, 
-.education h2 {
-  font-weight: 600;       /* Semi-bold */
-  font-size: 1.8rem;
-  letter-spacing: 0.05em; /* Adds some spacing between letters */
-  color: #004e92;         /* A nice blue shade */
-  margin-bottom: 0.8rem;
-  font-smooth: always;    /* Attempt smoother font rendering */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: color 0.3s ease;
-}
-
-/* Optional: add subtle hover effect on headings */
-.bio h2:hover,
-.education h2:hover {
-  color: #0077b6;
-  cursor: default;
-}
-
 header h1 {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.bio {
-  margin-top: 2rem;
-}
-
-.bio h2 {
-  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -58,6 +29,106 @@ nav a i {
   margin-right: 0.4rem;
 }
 
+/* Shared section title style (About, Education, etc.) */
+.about-title,
+.dropdown > summary {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #004e92;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: color 0.3s ease;
+}
+
+.about-title:hover,
+.dropdown > summary:hover {
+  color: #0077b6;
+  cursor: default;
+}
+
+/* Bio content spacing */
+.bio {
+  margin-top: 2rem;
+}
+
+/* Dropdown structure */
+details {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  padding-left: 0.5rem;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+summary::-webkit-details-marker,
+summary::marker {
+  display: none;
+}
+
+/* Simple arrow indicators */
+summary::after {
+  content: " ▷";
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+details[open] > summary::after {
+  content: " ▿";
+}
+
+/* Nested summaries (degree/job titles) */
+.dropdown > details > summary,
+.education details summary,
+.teaching summary,
+.experience summary {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0.6rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Nested content */
+.dropdown p,
+.education p,
+.teaching p,
+.experience p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-left: 1.5rem;
+  margin-top: 0.4rem;
+  color: #444;
+}
+
+/* Teaching/Experience shared styles */
+.teaching,
+.experience,
+.education {
+  margin-top: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* List style for courses */
+.teaching ul {
+  margin-top: 0.4rem;
+  margin-left: 2rem;
+  list-style-type: disc;
+}
+
+/* Projects section */
 .projects {
   padding: 2rem;
   max-width: 800px;
@@ -75,171 +146,6 @@ nav a i {
 .project h3 {
   margin-top: 0;
 }
-
-details {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 0.75rem;
-  padding-left: 0.5rem;
-}
-
-summary {
-  list-style: none;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary::marker {
-  display: none;
-}
-
-details[open] > summary::after {
-  transform: rotate(180deg);
-}
-
-summary::after {
-  content: "  ▷";
-  font-size: 0.8rem;
-  transition: transform 0.3s ease;
-  display: inline-block;
-}
-
-/* Rotate arrow when the dropdown is open */
-details[open] > summary::after {
- content: "  ▿";  
-}
-
-/* Custom arrow after 'Education' */
-.dropdown > summary,
-.about-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;       /* same size as About me */
-  font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 0.8rem;
-  color: #004e92;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: color 0.3s ease;
-}
-
-/* Optional hover effect */
-.dropdown > summary:hover,
-.about-title:hover {
-  color: #0077b6;
-}
-
-/* Nested entries (degrees, courses, jobs) */
-.dropdown > details > summary {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-top: 0.6rem;
-  color: #333;
-  cursor: pointer;
-}
-
-/* Nested paragraph content */
-.dropdown p {
-  font-size: 1rem;
-  margin-left: 1.5rem;
-  line-height: 1.6;
-  color: #444;
-}
-
-.dropdown[open] > summary::after {
-  transform: rotate(180deg);
-}
-
-/* Inner degree summaries */
-.education details summary {
-  font-weight: 600;
-  font-size: 1.1rem;
-  cursor: pointer;
-  user-select: none;
-  margin-top: 0.5rem;
-}
-
-.education details p {
-  margin: 0.4rem 0 0 1.5rem;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.education summary {
-  font-weight: 400;
-  font-size: 1.2rem;
-  outline: none;
-  user-select: none;
-}
-
-.education p {
-  margin: 0.5rem 0 0 1rem;
-  font-size: 1rem;
-  color: #222;
-  line-height: 1.4;
-}
-
-.teaching {
-  margin-top: 2rem;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  color: #333;
-}
-
-/* Reuse from Education styles */
-.teaching details {
-  margin-bottom: 0.8rem;
-  padding-left: 1rem;
-}
-
-.teaching summary {
-  font-weight: 600;
-  font-size: 1.2rem;
-  cursor: pointer;
-  user-select: none;
-  transition: color 0.3s ease;
-}
-
-.teaching p {
-  margin: 0.5rem 0 0 1.5rem;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.teaching ul {
-  margin-top: 0.4rem;
-  margin-left: 2rem;
-  list-style-type: disc;
-}
-
-.experience {
-  margin-top: 2rem;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  color: #333;
-}
-
-.experience details {
-  margin-bottom: 0.8rem;
-  padding-left: 1rem;
-}
-
-.experience summary {
-  font-weight: 600;
-  font-size: 1.2rem;
-  cursor: pointer;
-  user-select: none;
-}
-
-.experience p {
-  margin: 0.5rem 0 0 1.5rem;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
 
 footer {
   text-align: center;
