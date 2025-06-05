@@ -20,8 +20,8 @@ header {
 }
 
 .profile-photo {
-  width: 120px; /* Adjust size as needed */
-  height: 120px;
+  width: 140px; /* Adjust size as needed */
+  height: 140px;
   object-fit: cover;
   border-radius: 50%; /* Makes the image circular */
   border: 2px solid #fff;
