@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Times New Roman', serif;
   margin: 0;
   padding: 0;
   color: #333;
@@ -33,7 +33,7 @@ header {
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Times New Roman', serif;
   font-size: 1.4rem; /* Matches About Me */
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -64,7 +64,7 @@ nav a i {
 /* Shared section title style (About, Education, etc.) */
 .about-title,
 .dropdown > summary {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Times New Roman', serif;
   font-size: 1.4rem;          /* Large like 'About me' */
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -90,7 +90,7 @@ nav a i {
 
 /* Dropdown structure */
 details {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Times New Roman', serif;
   font-size: 1rem;
   color: #333;
   margin-bottom: 0.75rem;
@@ -156,7 +156,7 @@ details[open] > summary::after {
 .publications,
 .education {
   margin-top: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Times New Roman', serif;
   font-size: 1rem;
   color: #333;
 }
