@@ -16,6 +16,7 @@ header {
 }
 
 .header-content {
+  position: fixed;
   display: flex;
   align-items: center;
   gap: 1.5rem; /* Adjusts space between image and text */
@@ -161,14 +162,14 @@ summary::marker {
 
 /* Simple arrow indicators */
 summary::after {
-  content: " ▷";
+/*   content: " ▷"; */
   font-size: 0.8rem;
   transition: transform 0.3s ease;
   display: inline-block;
 }
 
-details[open] > summary::after {
-  content: " ▿";
+/* details[open] > summary::after {
+  content: " ▿"; */
 }
 
 .dropdown > details > summary,
