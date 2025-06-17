@@ -1,6 +1,5 @@
 body {
-  display: flex;
-  min-height: 100vh;
+/*   min-height: 100vh; */
   font-family: 'Gentium Basic', serif;
   margin: 0;
   padding: 0;
@@ -297,6 +296,7 @@ ul li {
 
 footer {
   margin-left: 200px;
+  margin-top: 2rem;
   text-align: center;
   padding: 1rem;
   background: #133E87;
