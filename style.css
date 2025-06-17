@@ -200,6 +200,10 @@ section li {
   margin-bottom: 0.75rem;
 }
 
+section[id] {
+  scroll-margin-top: 180px; /* Replace with your header's height */
+}
+
 /* Nested lists styling (for topics under Teaching) */
 /* section li ul {
   list-style-type: circle;
