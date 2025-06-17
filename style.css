@@ -43,15 +43,17 @@ header {
   margin-bottom: 0.5rem;
 }
 
-.sidebar {
+nav.sidebar {
   position: fixed;
+  top: 100px;
   left: 0;
   top: 0;
   width: 200px;
-  height: 100%;
+  height: calc(100vh - 100px);
   background: #24292e;
   padding-top: 1rem;
   box-sizing: border-box;
+  z-index: 900;
 }
 
 .sidebar ul {
