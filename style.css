@@ -184,6 +184,31 @@ summary::marker {
   margin-bottom: 0.75rem; /* Match your dropdown margin spacing */
 }
 
+/* General bullets styling for lists */
+section ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  line-height: 1.6;
+  font-family: 'Gentium Basic', serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+section li {
+  margin-bottom: 0.75rem;
+}
+
+/* Nested lists styling (for topics under Teaching) */
+section li ul {
+  list-style-type: circle;
+  margin-left: 1.5rem;
+}
+
+section li ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
 /* Simple arrow indicators */
 summary::after {
 /*   content: " ▷"; */
