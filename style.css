@@ -115,7 +115,7 @@ h2:hover {
   cursor: default;
 }
 
-nav a {
+nav a i{
   margin: 0 1rem;
   color: #58a6ff;
   text-decoration: none;
