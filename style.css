@@ -199,7 +199,7 @@ section li {
 }
 
 /* Nested lists styling (for topics under Teaching) */
-section li ul {
+/* section li ul {
   list-style-type: circle;
   margin-left: 1.5rem;
 }
@@ -207,7 +207,7 @@ section li ul {
 section li ul li {
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
-}
+} */
 
 /* Simple arrow indicators */
 summary::after {
