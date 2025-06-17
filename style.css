@@ -26,6 +26,8 @@ header {
   gap: 1.5rem; /* Adjusts space between image and text */
   margin: 0 auto;
   max-width: 1200px;
+  background: #24292e;      /* Match header background */
+  z-index: 1001;  
 }
 
 .profile-photo {
