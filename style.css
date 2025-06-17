@@ -85,7 +85,7 @@ main {
   margin-top: 200px; 
   top: 180px;
   flex: 1;
-  margin-top: calc(1.5rem + 2rem);
+/*   margin-top: calc(1.5rem + 2rem); */
 }
 
 /* Responsive: collapse sidebar on narrower screens */
