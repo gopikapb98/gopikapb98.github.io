@@ -44,15 +44,16 @@ header {
 
 nav.sidebar {
   position: fixed;
-  top: 100px;
+  top: 200px;
   left: 0;
-  top: 0;
+  bottom: 0;
   width: 200px;
-  height: calc(100vh - 100px);
+  height: auto;
   background: #24292e;
   padding-top: 1rem;
   box-sizing: border-box;
   z-index: 900;
+  overflow-y: auto;
 }
 
 .sidebar ul {
@@ -81,7 +82,7 @@ nav.sidebar {
 main {
   margin-left: 200px;
   padding: 2rem;
-  margin-top: 100px; 
+  margin-top: 200px; 
   flex: 1;
   margin-top: calc(1.5rem + 2rem);
 }
