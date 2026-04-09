@@ -6,250 +6,367 @@
   <title>Gopika P B | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body>  
-  <header>
-    <div class="header-content">
-      <img src="photo.jpeg" alt="Gopika P. B." class="profile-photo">
-      <div class="header-text">
-      <h1>Gopika P B</h1>
-      <p> Research Scholar | Mathematics | Scientific Computing</p>
-      <nav>
-        <a href="https://github.com/gopikapb98" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://linkedin.com/in/gopika-p-b-5a3582186" target="_blank"> <i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://orcid.org/0000-0001-8458-6085" target="_blank"><i class="fab fa-orcid"></i>ORCID</a>
-        <a href="https://www.researchgate.net/profile/Gopika-B" target="_blank"> <i class="fab fa-researchgate"></i> ResearchGate</a>
-        <a href="Gopika_CV.pdf" target="_blank"><i class="fas fa-file-alt"></i>Resume</a>
-      </nav>
+<body>
+
+  <!-- Top header bar -->
+  <header id="site-header">
+    <div class="header-inner">
+      <div class="header-identity">
+        <img src="photo.jpeg" alt="Gopika P. B." class="profile-photo">
+        <div class="header-text">
+          <h1>Gopika P B</h1>
+          <p class="tagline">Research Scholar &nbsp;·&nbsp; Mathematics &nbsp;·&nbsp; Scientific Computing</p>
+          <nav class="social-links">
+            <a href="https://github.com/gopikapb98" target="_blank" title="GitHub"><i class="fab fa-github"></i><span>GitHub</span></a>
+            <a href="https://linkedin.com/in/gopika-p-b-5a3582186" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+            <a href="https://orcid.org/0000-0001-8458-6085" target="_blank" title="ORCID"><i class="fab fa-orcid"></i><span>ORCID</span></a>
+            <a href="https://www.researchgate.net/profile/Gopika-B" target="_blank" title="ResearchGate"><i class="fab fa-researchgate"></i><span>ResearchGate</span></a>
+            <a href="Gopika_CV.pdf" target="_blank" title="Resume"><i class="fas fa-file-alt"></i><span>CV</span></a>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
-     <nav class="sidebar">
-  <ul>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#achievements">Achievements</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#activities">Activities</a></li>
-  </ul>
-</nav>
-<main>
-  <section id="about" section class="bio">
-    <h2>About Me</h2>
-    <p>
-     I’m a computational and applied mathematician pursuing doctoral research under Dr. Nagaiah Chamakuri, driven by a passion for 
-      developing innovative algorithms and computational methods to tackle complex real-world challenges in mathematical biology.
-      My work pioneers efficient and robust numerical schemes to model the electrophysiology, mechanics, and electromechanics of the heart, 
-      ensuring high biophysical accuracy across multiple spatial and temporal scales. Leveraging high-performance parallel computing, 
-      I strive to bridge the computational challenges inherent in cardiac electromechanical modeling. 
-      Committed to interdisciplinary collaboration and STEM advocacy, I’m devoted to advancing the frontiers of mathematical science 
-      and its real-world applications.
-    </p>
-  </section>
 
-<section id="education" class="education">
-  <h2 class="about-title">Education</h2>
-  <ul>
-    <li>
-      <strong>PhD in Computational Mathematics</strong><br>
-      Department: Center for High Performance Computing and School of Mathematics<br>
-      Institute: IISER Thiruvananthapuram<br>
-      Supervisor: Dr. Nagaiah Chamakuri<br>
-      Research Focus: Numerical methods for cardiac electromechanical models<br>
-      Duration: 2023–Present
-    </li>
-    <li>
-      <strong>MSc in Mathematics</strong><br>
-      National Institute of Technology Calicut, 2018–2020
-    </li>
-    <li>
-      <strong>BSc in Mathematics</strong><br>
-      Providence Women's College Malaparamba (University of Calicut), 2015–2018
-    </li>
-    <li>
-      <strong>AISSCE</strong><br>
-      Veda Vyasa Vidyalayam Malaparamba, 2018
-    </li>
-    <li>
-      <strong>AISSE</strong><br>
-      Veda Vyasa Vidyalayam Malaparamba, 2015
-    </li>
-  </ul>
-</section>
-  
-<section id="experience" class="teaching">
-  <h2 class="about-title">Teaching Assistant</h2>
-  <ul>
-    <li>
-      <strong>Scientific Computing</strong><br>
-      Vasanth 2026, IISER Thiruvananthapuram
-    </li>
-    <li>
-      <strong>Numerical Analysis</strong><br>
-      Varsha 2025, IISER Thiruvananthapuram
-    </li>
-    <li>
-      <strong>IDC 121 – Mathematical Tools II</strong><br>
-      Vasanth 2025 &amp; Vasanth 2024, IISER Thiruvananthapuram
-    </li>
-    <li>
-      <strong>MAT 111 – Introduction to Proofs</strong><br>
-      Varsha 2024, IISER Thiruvananthapuram
-    </li>
-    <li>
-      <strong>B.Sc. Mathematics – Govt. College Nedumangadu, Kerala</strong><br>
-      2023–2025; Topics taught:
+  <!-- Sidebar navigation -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <div class="nav-label">Navigation</div>
       <ul>
-        <li>LaTeX and Sagemath</li>
-        <li>Multivariable Calculus</li>
-        <li>Vector Calculus</li>
-        <li>Number Theory</li>
-        <li>Theory of Matrices</li>
+        <li><a href="#about" class="nav-link"><span class="nav-num">01</span>About</a></li>
+        <li><a href="#education" class="nav-link"><span class="nav-num">02</span>Education</a></li>
+        <li><a href="#experience" class="nav-link"><span class="nav-num">03</span>Experience</a></li>
+        <li><a href="#achievements" class="nav-link"><span class="nav-num">04</span>Achievements</a></li>
+        <li><a href="#publications" class="nav-link"><span class="nav-num">05</span>Publications</a></li>
+        <li><a href="#activities" class="nav-link"><span class="nav-num">06</span>Activities</a></li>
       </ul>
-    </li>
-  </ul>
-</section>
+    </div>
+  </nav>
 
+  <main>
 
-<section id="experience" class="experience">
-  <h2 class="about-title">Experience</h2>
-  <ul>
-    <li>
-      <strong>Project Assistant</strong><br>
-      IISER Thiruvananthapuram, October 2022 – December 2022
-    </li>
-    <li>
-      <strong>Research Associate</strong><br>
-      Acadecraft Private Limited, July 2022 – September 2022
-    </li>
-    <li>
-      <strong>Subject Matter Expert</strong><br>
-      Vaidik Eduservice Pvt. Ltd, August 2020 – May 2021
-    </li>
-  </ul>
-</section>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2>About Me</h2>
+      </div>
+      <div class="section-body">
+        <p class="lead">
+          I'm a computational and applied mathematician pursuing doctoral research under Dr. Nagaiah Chamakuri, driven by a passion for 
+          developing innovative algorithms and computational methods to tackle complex real-world challenges in mathematical biology.
+        </p>
+        <p>
+          My work pioneers efficient and robust numerical schemes to model the electrophysiology, mechanics, and electromechanics of the heart, 
+          ensuring high biophysical accuracy across multiple spatial and temporal scales. Leveraging high-performance parallel computing, 
+          I strive to bridge the computational challenges inherent in cardiac electromechanical modeling. 
+          Committed to interdisciplinary collaboration and STEM advocacy, I'm devoted to advancing the frontiers of mathematical science 
+          and its real-world applications.
+        </p>
+      </div>
+    </section>
 
-<section class="internship">
-  <h2 class="about-title">Internship</h2>
-  <ul>
-    <li>
-      <strong>Summer Fellowship Programme</strong><br>
-      IIT Madras, 2019
-    </li>
-    <li>
-      <strong>Freelance Doubt Expert</strong><br>
-      Vedantu Innovation Pvt. Ltd.
-    </li>
-  </ul>
-</section>
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2>Education</h2>
+      </div>
+      <div class="section-body">
+        <div class="timeline">
 
- <section id="publications" section class="publications">
-<!--   <details class="dropdown"> -->
-    <summary class="about-title">Publications </summary>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">2023 – Present</div>
+              <h3>PhD in Computational Mathematics</h3>
+              <p class="inst">IISER Thiruvananthapuram</p>
+              <p>Center for High Performance Computing &amp; School of Mathematics<br>
+              Supervisor: Dr. Nagaiah Chamakuri<br>
+              <em>Numerical methods for cardiac electromechanical models</em></p>
+            </div>
+          </div>
 
-  <ul>
-    <li>
-      Gopika P. B., Peter Bastian, and Nagaiah Chamakuri.  
-      <i>Novel bidomain partitioned strategies for the simulation of ventricular fibrillation dynamics</i>.  
-      <a href="https://arxiv.org/abs/2510.27447" target="_blank">arXiv:2302.00217</a>
-    </li>
-    <li>
-      Gopika P. B., Nishant Ranwan, and Nagaiah Chamakuri.  
-      <i>Reliable A Posteriori Error Estimator for a Multi-scale Cancer Invasion Model</i>.  
-      <a href="https://doi.org/10.48550/arXiv.2302.00217" target="_blank">arXiv:2302.00217</a>
-    </li>
-    <li>
-      Sobin Thomas, Gopika P. B., and Suresh Kumar Nadupuri.  
-      <i>Higher order accurate compact schemes for time dependent linear and nonlinear convection-diffusion equations</i>.  
-      <b>AJMAA</b>, Vol. 20 (2023).
-    </li>
-    <li>
-      Sobin Thomas, Gopika P. B., and Suresh Kumar Nadupuri.  
-      <i>Higher Order Accurate Numerical Solution of Nagumo Equation</i>.  
-      <b>AIP Conference Proceedings</b>, Vol. 2336, No. 1 (2021).
-    </li>
-  </ul>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">2018 – 2020</div>
+              <h3>MSc in Mathematics</h3>
+              <p class="inst">National Institute of Technology Calicut</p>
+            </div>
+          </div>
 
-  </details>
-</section>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">2015 – 2018</div>
+              <h3>BSc in Mathematics</h3>
+              <p class="inst">Providence Women's College Malaparamba, University of Calicut</p>
+            </div>
+          </div>
 
-   <section id="achievements" section class="publications">
-<!--   <details class="dropdown"> -->
-    <summary class="about-title">Achievements and Awards </summary>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">2015</div>
+              <h3>AISSE &amp; AISSCE</h3>
+              <p class="inst">Veda Vyasa Vidyalayam Malaparamba</p>
+            </div>
+          </div>
 
-  <ul>
-    <li>
-      PMRF under the Direct Entry Scheme, in Cycle 10
-    </li>
-    <li>
-     Qualified Joint CSIR-UGC JRF-June 2022
-    </li>
-    <li>
-      Qualified GATE-2020
-    </li>
-    <li>
-     Qualified Joint CSIR-UGC JRF-December 2019
-    </li>
-    <li>
-     Prize in honour of Prof. Rose Antony for proficiency in Mathematics by Providence Women's College
-    </li>
-  </ul>
+        </div>
+      </div>
+    </section>
 
-  </details>
-</section>
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2>Experience</h2>
+      </div>
+      <div class="section-body two-col">
 
-<section id="activities" section class="publications">
-<!--   <details class="dropdown"> -->
-    <summary class="about-title">Conferences and Workshops </summary>
-  <ul>
-    <li>
-      Presented a paper and served as a student organizer for the International Conference on ''Latest Advances in Computational and Applied Mathematics-2025 (LACAM-25)'' from December 8 -11, 2025 
-      jointly organized by the IISER Thiruvananthapuram, and the Interdisciplinary Center for Scientific Computing (IWR), University of Heidelberg, Germany
-    </li>
-    <li>
-     Contributed talk at The European Conference on Numerical Mathematics and Advanced Applications (ENUMATH) 2025 held at the University of Heidelberg, Germany, from September 1-5, 2025 
-      within the mini-symposium "Recent Advances in Mathematical and Computational Methods for Cardiac Biomechanics".
-    </li>
-    <li>
-      Participated and student organizer for the International Conference on ''Latest Advances in Computational and Applied Mathematics-2024 (LACAM-24)'' from February 21 -24, 2024, in IISER Thiruvananthapuram
-    </li>
-    <li>
-    Presented a paper at the International Conference on Applied Mathematics and Mechanics (ICAMM 2023) held at IIT Indore from October 18-20, 2023.
-    </li>
-    <li>
-     Participated in Indo-German Conference on Computational Mathematics (IGCM 2023) held at IISc Bangalore, March 27-30, 2023. 
-    </li>
-    <li>
-     Participated in NCMW - Finite Element Methods for PDEs (2023), from September 11-16, 2023, in IISER Thiruvananthapuram.
-    </li>
-  </ul>
-  </details>
-</section>
+        <div class="exp-group">
+          <h3 class="exp-group-title">Teaching Assistant</h3>
+          <div class="card-list">
+            <div class="exp-card">
+              <div class="exp-card-title">Scientific Computing</div>
+              <div class="exp-card-sub">Vasanth 2026 · IISER Thiruvananthapuram</div>
+            </div>
+            <div class="exp-card">
+              <div class="exp-card-title">Numerical Analysis</div>
+              <div class="exp-card-sub">Varsha 2025 · IISER Thiruvananthapuram</div>
+            </div>
+            <div class="exp-card">
+              <div class="exp-card-title">IDC 121 – Mathematical Tools II</div>
+              <div class="exp-card-sub">Vasanth 2025 &amp; 2024 · IISER Thiruvananthapuram</div>
+            </div>
+            <div class="exp-card">
+              <div class="exp-card-title">MAT 111 – Introduction to Proofs</div>
+              <div class="exp-card-sub">Varsha 2024 · IISER Thiruvananthapuram</div>
+            </div>
+            <div class="exp-card">
+              <div class="exp-card-title">B.Sc. Mathematics</div>
+              <div class="exp-card-sub">Govt. College Nedumangadu, Kerala · 2023–2025</div>
+              <ul class="topic-tags">
+                <li>LaTeX &amp; Sagemath</li>
+                <li>Multivariable Calculus</li>
+                <li>Vector Calculus</li>
+                <li>Number Theory</li>
+                <li>Theory of Matrices</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-  <section class="publications">
-<!--   <details class="dropdown"> -->
-    <summary class="about-title">Other Academic Activities </summary>
-  <ul>
-     <li>
-      Research visit at IWR, Heidelberg University, from August 15, 2025, to September 15, 2025
-    </li>
-    <li>
-      Research visit at IWR, Heidelberg University from July 01, 2024, to August 31, 2024
-    </li>
-    <li>
-    Participated in the Global Science Festival Kerala (GSFK) Mathematics Symposium 2024 at Thiruvananthapuram, Kerala
-    </li>
-    <li>
-     Evaluator for Vidyarthi Vigyan Manthan National Camp on May 20 and 21, 2023, held at IISER Thiruvananthapuram.
-    </li>
-  </ul>
-  </details>
-</section>
-    </main>
-    <footer>
-    <p>&copy; 2025 Gopika P B</p>
+        <div class="exp-group">
+          <h3 class="exp-group-title">Work Experience</h3>
+          <div class="card-list">
+            <div class="exp-card">
+              <div class="exp-card-title">Project Assistant</div>
+              <div class="exp-card-sub">IISER Thiruvananthapuram</div>
+              <div class="exp-card-date">Oct 2022 – Dec 2022</div>
+            </div>
+            <div class="exp-card">
+              <div class="exp-card-title">Research Associate</div>
+              <div class="exp-card-sub">Acadecraft Private Limited</div>
+              <div class="exp-card-date">Jul 2022 – Sep 2022</div>
+            </div>
+            <div class="exp-card">
+              <div class="exp-card-title">Subject Matter Expert</div>
+              <div class="exp-card-sub">Vaidik Eduservice Pvt. Ltd.</div>
+              <div class="exp-card-date">Aug 2020 – May 2021</div>
+            </div>
+          </div>
+
+          <h3 class="exp-group-title" style="margin-top: 2rem;">Internships</h3>
+          <div class="card-list">
+            <div class="exp-card">
+              <div class="exp-card-title">Summer Fellowship Programme</div>
+              <div class="exp-card-sub">IIT Madras · 2019</div>
+            </div>
+            <div class="exp-card">
+              <div class="exp-card-title">Freelance Doubt Expert</div>
+              <div class="exp-card-sub">Vedantu Innovation Pvt. Ltd.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2>Achievements &amp; Awards</h2>
+      </div>
+      <div class="section-body">
+        <div class="award-grid">
+          <div class="award-item">
+            <div class="award-icon"><i class="fas fa-medal"></i></div>
+            <div>
+              <div class="award-title">PMRF – Direct Entry Scheme</div>
+              <div class="award-sub">Prime Minister's Research Fellowship, Cycle 10</div>
+            </div>
+          </div>
+          <div class="award-item">
+            <div class="award-icon"><i class="fas fa-star"></i></div>
+            <div>
+              <div class="award-title">CSIR-UGC JRF</div>
+              <div class="award-sub">Qualified — June 2022</div>
+            </div>
+          </div>
+          <div class="award-item">
+            <div class="award-icon"><i class="fas fa-star"></i></div>
+            <div>
+              <div class="award-title">CSIR-UGC JRF</div>
+              <div class="award-sub">Qualified — December 2019</div>
+            </div>
+          </div>
+          <div class="award-item">
+            <div class="award-icon"><i class="fas fa-check-circle"></i></div>
+            <div>
+              <div class="award-title">GATE 2020</div>
+              <div class="award-sub">Qualified</div>
+            </div>
+          </div>
+          <div class="award-item">
+            <div class="award-icon"><i class="fas fa-trophy"></i></div>
+            <div>
+              <div class="award-title">Prof. Rose Antony Prize</div>
+              <div class="award-sub">Proficiency in Mathematics · Providence Women's College</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="section">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2>Publications</h2>
+      </div>
+      <div class="section-body">
+        <ol class="pub-list">
+          <li class="pub-item">
+            <div class="pub-authors">Gopika P. B., Peter Bastian, and Nagaiah Chamakuri.</div>
+            <div class="pub-title"><em>Novel bidomain partitioned strategies for the simulation of ventricular fibrillation dynamics.</em></div>
+            <a class="pub-link" href="https://arxiv.org/abs/2510.27447" target="_blank"><i class="fas fa-external-link-alt"></i> arXiv:2510.27447</a>
+          </li>
+          <li class="pub-item">
+            <div class="pub-authors">Gopika P. B., Nishant Ranwan, and Nagaiah Chamakuri.</div>
+            <div class="pub-title"><em>Reliable A Posteriori Error Estimator for a Multi-scale Cancer Invasion Model.</em></div>
+            <a class="pub-link" href="https://doi.org/10.48550/arXiv.2302.00217" target="_blank"><i class="fas fa-external-link-alt"></i> arXiv:2302.00217</a>
+          </li>
+          <li class="pub-item">
+            <div class="pub-authors">Sobin Thomas, Gopika P. B., and Suresh Kumar Nadupuri.</div>
+            <div class="pub-title"><em>Higher order accurate compact schemes for time dependent linear and nonlinear convection-diffusion equations.</em></div>
+            <div class="pub-venue"><strong>AJMAA</strong>, Vol. 20 (2023).</div>
+          </li>
+          <li class="pub-item">
+            <div class="pub-authors">Sobin Thomas, Gopika P. B., and Suresh Kumar Nadupuri.</div>
+            <div class="pub-title"><em>Higher Order Accurate Numerical Solution of Nagumo Equation.</em></div>
+            <div class="pub-venue"><strong>AIP Conference Proceedings</strong>, Vol. 2336, No. 1 (2021).</div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section id="activities" class="section">
+      <div class="section-header">
+        <span class="section-num">06</span>
+        <h2>Activities</h2>
+      </div>
+      <div class="section-body">
+
+        <h3 class="subsection-title">Conferences &amp; Workshops</h3>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-year">2025</span>
+            <span>Paper presentation &amp; student organizer at <em>LACAM-25</em>, jointly organized by IISER Thiruvananthapuram and IWR, Heidelberg University, Germany (Dec 8–11, 2025).</span>
+          </li>
+          <li>
+            <span class="activity-year">2025</span>
+            <span>Contributed talk at <em>ENUMATH 2025</em>, University of Heidelberg, Germany (Sep 1–5) — mini-symposium on Cardiac Biomechanics.</span>
+          </li>
+          <li>
+            <span class="activity-year">2024</span>
+            <span>Student organizer at <em>LACAM-24</em>, IISER Thiruvananthapuram (Feb 21–24, 2024).</span>
+          </li>
+          <li>
+            <span class="activity-year">2023</span>
+            <span>Paper presentation at <em>ICAMM 2023</em>, IIT Indore (Oct 18–20, 2023).</span>
+          </li>
+          <li>
+            <span class="activity-year">2023</span>
+            <span>Participated in <em>Indo-German Conference on Computational Mathematics (IGCM 2023)</em>, IISc Bangalore (Mar 27–30, 2023).</span>
+          </li>
+          <li>
+            <span class="activity-year">2023</span>
+            <span>Participated in <em>NCMW – Finite Element Methods for PDEs</em>, IISER Thiruvananthapuram (Sep 11–16, 2023).</span>
+          </li>
+        </ul>
+
+        <h3 class="subsection-title" style="margin-top: 2rem;">Other Academic Activities</h3>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-year">2025</span>
+            <span>Research visit at IWR, Heidelberg University (Aug 15 – Sep 15, 2025).</span>
+          </li>
+          <li>
+            <span class="activity-year">2024</span>
+            <span>Research visit at IWR, Heidelberg University (Jul 1 – Aug 31, 2024).</span>
+          </li>
+          <li>
+            <span class="activity-year">2024</span>
+            <span>Participated in <em>Global Science Festival Kerala (GSFK)</em> Mathematics Symposium, Thiruvananthapuram.</span>
+          </li>
+          <li>
+            <span class="activity-year">2023</span>
+            <span>Evaluator at <em>Vidyarthi Vigyan Manthan National Camp</em>, IISER Thiruvananthapuram (May 20–21, 2023).</span>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Gopika P B &nbsp;·&nbsp; IISER Thiruvananthapuram &nbsp;·&nbsp; <span id="year"></span></p>
   </footer>
+
+  <script>
+    // Auto year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          const active = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-40% 0px -50% 0px' });
+    sections.forEach(s => observer.observe(s));
+
+    // Fade-in on scroll
+    const fadeEls = document.querySelectorAll('.section');
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.08 });
+    fadeEls.forEach(el => fadeObserver.observe(el));
+  </script>
 </body>
 </html>
